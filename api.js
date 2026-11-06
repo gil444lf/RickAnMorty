@@ -20,6 +20,7 @@ async function cargarPersonajesEnPila() {
     // Se recorre en el mismo orden en que entrega la API (Rick primero)
     for (const p of datos.results) {
       const personaje = new Personaje(p.name, p.gender, p.species, p.status);
+    
      
       pila.push(personaje);
       
